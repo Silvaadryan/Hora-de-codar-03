@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 05</title>
+</head>
+
+<script>
+
+    const primeiroNumero = parseInt(prompt("Digite o primeiro número inteiro:"));
+    const segundoNumero = parseInt(prompt("Digite o segundo número inteiro:"));
+
+
+    if (primeiroNumero >= segundoNumero) {
+        console.log("O primeiro número deve ser menor que o segundo número.");
+    } else {
+
+        let soma = 0;
+        let contagem = 0;
+
+    
+        for (let i = primeiroNumero; i <= segundoNumero; i++) {
+            soma += i; 
+        }
+
+
+        const media = soma / contagem;
+
+
+        var texto = ( "<p>A média aritmética é: " + media + "</p>" )
+        document.write(texto)
+    
+    }
+
+
+
+
+
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>

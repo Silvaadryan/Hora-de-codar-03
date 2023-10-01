@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão10</title>
+
+    <script>
+
+
+
+
+        // Solicita ao usuário que insira o valor de N
+        const N = parseInt(prompt("Digite um número para gerar as tabuadas de 1 até N:"));
+
+        // Verifica se o valor de N é válido (maior que zero)
+        if (N <= 0 || isNaN(N)) {
+            document.write("Por favor, digite um valor válido maior que zero.");
+        } else {
+            // Loop externo para iterar de 1 até N
+            for (let i = 1; i <= N; i++) {
+                document.write(`<h2>Tabuada do ${i}:</h2>`);
+
+                // Loop interno para gerar a tabuada do número atual (i)
+                for (let j = 1; j <= 10; j++) {
+                    const resultado = i * j;
+                    document.write(`${i} x ${j} = ${resultado}<br>`);
+                }
+
+                document.write("<br>"); // Adiciona uma linha em branco entre as tabuadas
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

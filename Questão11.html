@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 11</title>
+    <script>
+
+
+
+        let valoresDentroIntervalo = 0; // Inicializa o contador de valores dentro do intervalo
+        let valoresForaIntervalo = 0; // Inicializa o contador de valores fora do intervalo
+
+        // Loop para ler os 10 valores informados pelo usuário
+        for (let i = 1; i <= 10; i++) {
+            const valor = parseFloat(prompt(`Digite o valor ${i}:`));
+
+            // Verifica se o valor está dentro do intervalo [24, 42]
+            if (valor >= 24 && valor <= 42) {
+                valoresDentroIntervalo++;
+            } else {
+                valoresForaIntervalo++;
+            }
+        }
+
+        // Exibe os resultados na tela
+        var resultado = (`Valores dentro do intervalo [24, 42]: ${valoresDentroIntervalo}`);
+        var resultado2 =(`Valores fora do intervalo [24, 42]: ${valoresForaIntervalo}`);
+        document.write(resultado)
+        document.write(resultado2)
+    </script>
+
+
+
+</head>
+
+
+
+<body>
+
+</body>
+
+</html>

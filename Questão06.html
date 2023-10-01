@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão06 </title>
+    <script>
+        let alunosAprovados = 0; 
+
+        do {
+
+            var nota1 = parseFloat(prompt("Digite a primeira nota do aluno:"));
+            var nota2 = parseFloat(prompt("Digite a segunda nota do aluno:"));
+
+            var media = (nota1 + nota2) / 2;
+
+            if (media >= 9.5) {
+            
+            var resultado01 =("Aluno aprovado com média: " + media.toFixed(2));
+            document.write(resultado01)
+
+                alunosAprovados++;
+            } else {
+                
+                var resultado02 = ("Aluno reprovado com média: " + media.toFixed(2));
+                document.write(resultado02)
+            }
+            const continuar = prompt("Calcular a média de outro aluno? (S/N)").toUpperCase();
+
+        } while (continuar === 'S');
+
+
+        var resultado03 = ("Total de alunos aprovados: " + alunosAprovados);
+        document.write(resultado03)
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
